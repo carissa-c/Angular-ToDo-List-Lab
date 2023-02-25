@@ -8,7 +8,8 @@
     <!--remove button-->
     <div *ngIf="t.completed === false">
     <!--button-->
-    <h2><button (click)="CompleteTask(i)">Completed</button></h2>
+    <!-- <h2><button (click)="CompleteTask(i)">Completed</button></h2> -->
+    <h2><button (click)="CompleteTask(i)" size="20" ngbTooltip="Close Task" placement="right">Completed</button></h2>
     </div>
 </div>
 
