@@ -1,0 +1,20 @@
+<h1>Get Yo Shit Done!</h1>
+<h2>Shit to do:</h2>
+
+
+<div *ngFor="let t of todos; index as i">
+    <p>{{t.task}}</p>
+    <!-- <p>{{t.completed}}</p> -->
+    <!--remove button-->
+    <div *ngIf="t.completed === false">
+    <!--button-->
+    <h2><button (click)="CompleteTask(i)">Completed</button></h2>
+    </div>
+</div>
+
+<div>
+    <h1>Add Shit To Do</h1>
+    <input type="text" [(ngModel)]="new">
+    <button (click)="addTodo()">Add Task</button>
+</div>
+
